@@ -1,0 +1,31 @@
+%\documentclass[10pt,a4paper]{book}
+\documentclass{memoir}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+%\setmainfont{???}
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\setstocksize{17.5cm}{10.8cm}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+\setlrmarginsandblock{1.2cm}{1.2cm}{*} % Left and right margin
+\setulmarginsandblock{1.2cm}{1.2cm}{*}  % Upper and lower margin
+\checkandfixthelayout 
+
+\title{Ma petite vie à moi}
+\author{GIL Morgan}
+
+\begin{document}
+   \maketitle
+
+   \input{introduction.tex}
+   \input{days/juin.tex}
+   \input{days/juillet.tex}
+\end{document}
